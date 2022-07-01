@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap_cdn_css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- coustome_css -->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <title>My_Dream</title>
+</head>
+<body>
+	<!-- header -->
+	<section>
+		<div class="container-fluid top-mini-header py-1">
+			<a href="" class="text-decoration-none"><h6 class="text-center text-white m-0">Buy With Your Freedom Of Mind!</h6></a>
+		</div>
+	</section>
+	<!-- social_customer_type -->
+	<section class="overlay-a d-none" id="myDIV">
+		<div class="container-fluid social text-end pe-4">
+			<i class="fa-solid fa-xmark close-top" onclick="hide()"></i>
+			<p href="" class="text-decoration-none d-inline-block mx-1"><span><strong class="color" onclick="hide()">Customer</strong></span></>
+			<span class="d-null-mb">/</span>
+			<a href="" class="text-decoration-none d-inline-block mx-1"><span><strong class="color">Seller</strong></span></a>
+			<a class="text-decoration-none" href=""><i class="d-null-mb hover_ion fa-brands fa-facebook-f d-inline-block mx-1"></i></a>
+			<a class="text-decoration-none" href=""><i class="d-null-mb hover_ion fa-brands fa-google d-inline-block mx-1"></i></a>
+		</div>
+	</section>
+	<hr class="m-0 mt-2 d-null-mb">
+	<!-- logobar -->
+	<section class="logobar mt-2">
+		<div class="container-fluid">
+			<div class="d-flex justify-content-between logo_div">
+				<div class="logo">
+						<img class="img-fluid d-inline-block m-auto" src="asset/img/logo.webp" alt="" srcset="">
+				</div>
+				<div class="order_3">
+					<form action="" class="search-form m-auto" id="search-form">
+						<input class="search-input" id="search-input" type="search" placeholder="Search here ...">
+						<i class="searchfa fa-solid fa-magnifying-glass mx-2" id="searchfa"></i>
+					</form> 
+				</div>
+				<div class="">
+					<div class="d-null-mb">
+						<a href="" class="text-decoration-none"><i class="hover_ion fa-solid fa-user mx-2 "></i></a>
+						<a href="" class="text-decoration-none"><i class="hover_ion align-self-center fa-solid fa-bag-shopping mx-2"></i></a>
+					</div>
+					<button type="button" class="menu-mobile-toggle d-none">
+							<i class="hover_ion fa-solid fa-bars"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr class="m-0 mt-2">
+	<!-- # navbar # -->
+	<header class="header">
+			<div class="container">
+				<section class="wrapper">
+					<!-- Navbar Section -->
+					<div class="header-item-center m-auto">
+						<div class="overlay"></div>
+						<nav class="menu" id="menu">
+							<div class="menu-mobile-header">
+								<button type="button" class="menu-mobile-arrow"><i class="hover_ion fa-solid fa-angles-left"></i></button>
+								<div class="menu-mobile-title"></div>
+								<button type="button" class="menu-mobile-close"><i class="hover_ion fa-solid fa-xmark"></i></button>
+							</div>
+							<ul class="menu-section ps-2">
+								<li class="menu-item"><a href="#">Home</a></li>
+								<li class="menu-item-has-children">
+									<a href="#">Products <i class="fa-solid fa-caret-down ms-1 ion"></i></a>
+									<div class="menu-subs menu-mega menu-column-4">
+										<div class="list-item text-center">
+											<a href="#">
+												<img src="asset/img/product-01.jpg" loading="lazy" alt="Product Images">
+												<h4 class="title">Product One</h4>
+											</a>
+										</div>
+										<div class="list-item text-center">
+											<a href="#">
+												<img src="asset/img/product-02.jpg" loading="lazy" alt="Product Images">
+												<h4 class="title">Product Two</h4>
+											</a>
+										</div>
+										<div class="list-item text-center">
+											<a href="#">
+												<img src="asset/img/product-03.jpg" loading="lazy" alt="Product Images">
+												<h4 class="title">Product Three</h4>
+											</a>
+										</div>
+										<div class="list-item text-center">
+											<a href="#">
+												<img src="asset/img/product-04.jpg" loading="lazy" alt="Product Images">
+												<h4 class="title">Product Four</h4>
+											</a>
+										</div>
+									</div>
+								</li>
+								<li class="menu-item-has-children">
+									<a href="#">Categories <i class="fa-solid fa-caret-down ms-1 ion"></i></a>
+									<div class="menu-subs menu-mega menu-column-4">
+										<div class="list-item">
+											<h4 class="title">Men's Fashion</h4>
+											<ul>
+												<li class="dropdown" id="first_sub"><a class="dropdown-toggle" href="#">1st Product List</a>
+													<ul class="dropdown-content">
+														<div class="menu_sub_border">
+															<li class="dropdown_s" id="first_sub_show"><a class="dropdown-toggle" href="#"> 2d Link 1</a>
+																<ul class="dropdown-content_s">
+																	<div class="menu_sub_border">
+																		<li><a href="#">Link 1</a></li>
+																		<li><a href="#">Link 2</a></li>
+																		<li><a href="#">Link 3</a></li>
+																	</div>
+																</ul>
+															</li>
+														</div>
+														</li>
+														<li><a href="#">Link 2</a></li>
+														<li><a href="#">Link 3</a></li>
+														<li><a href="#">Link 3</a></li>
+													</ul>
+												</li>
+												<li class="dropdown" id="first_sub"><a class="dropdown-toggle" href="#">1st Product List</a>
+													<ul class="dropdown-content">
+														<div class="menu_sub_border">
+															<li class="dropdown_s" id="first_sub_show"><a class="dropdown-toggle" href="#"> 2d Link 1</a>
+																<ul class="dropdown-content_s">
+																	<div class="menu_sub_border">
+																		<li><a href="#">Link 1</a></li>
+																		<li><a href="#">Link 2</a></li>
+																		<li><a href="#">Link 3</a></li>
+																	</div>
+																</ul>
+																
+															</li>
+															<li class="dropdown_s" id="first_sub_show"><a class="dropdown-toggle" href="#"> bangladesh bangladesh</a>
+																<ul class="dropdown-content_s">
+																	<div class="menu_sub_border">
+																		<li><a href="#">Link 1</a></li>
+																		<li><a href="#">Link 2</a></li>
+																		<li><a href="#">Link 3</a></li>
+																	</div>
+																</ul>
+															</li>
+															<li><a href="#">shibli</a></li>
+															<li><a href="#">raihan</a></li>
+															<li><a href="#">akhim 3</a></li>
+														</div>
+													</ul>
+												</li>
+												<li><a href="#">Product List</a></li>
+												<li><a href="#">Product List</a></li>
+											</ul>
+											<h4 class="title">Kid's Fashion</h4>
+											<ul>
+												<li><a href="#">Product List</a></li>
+												<li><a href="#">Product List</a></li>
+												<li><a href="#">Product List</a></li>
+												<li><a href="#">Product List</a></li>
+											</ul>
+										</div>
+										<div class="list-item">
+											<h4 class="title">Women's Fashion</h4>
+											<ul>
+												<li><a href="#">Product List</a></li>
+												<li><a href="#">Product List</a></li>
+												<li><a href="#">Product List</a></li>
+												<li><a href="#">Product List</a></li>
+											</ul>
+											<h4 class="title">Health & Beauty</h4>
+											<ul>
+												<li><a href="#">Product List</a></li>
+												<li><a href="#">Product List</a></li>
+												<li><a href="#">Product List</a></li>
+												<li><a href="#">Product List</a></li>
+											</ul>
+										</div>
+										<div class="list-item">
+											<h4 class="title">Home & Lifestyle</h4>
+											<ul>
+												<li><a href="#">Product List</a></li>
+												<li><a href="#">Product List</a></li>
+												<li><a href="#">Product List</a></li>
+												<li><a href="#">Product List</a></li>
+												<li><a href="#">Product List</a></li>
+												<li><a href="#">Product List</a></li>
+												<li><a href="#">Product List</a></li>
+											</ul>
+										</div>
+										<div class="list-item">
+											<img src="asset/img/product-05.jpg" loading="lazy" alt="Product Images">
+										</div>
+									</div>
+								</li>
+								<li class="menu-item-has-children">
+									<a href="#">Accounts <i class="fa-solid fa-caret-down ms-1 ion"></i></a>
+									<div class="menu-subs menu-column-1">
+										<ul>
+											<li><a href="#">Register</a></li>
+											<li><a href="#">Questions</a></li>
+											<li><a href="#">Privacy Policy</a></li>
+											<li><a href="#">Term of Cookies</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu-item"><a href="#">Resources</a></li>
+								<li class="menu-item"><a href="#">Contact Us</a></li>
+							</ul>
+						</nav>
+					</div>
+				</section>
+			</div>
+	</header>
+	<!-- buttom -->
+	<section class="buttom">
+		<div class="container-fluid">
+			bdfg
+		</div>
+	</section>
+    <!-- bootstrap_cdn_js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<!-- jQuary -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<!-- me -->
+	<script src="asset/js/me.js"></script>
+</body>
+</html>
